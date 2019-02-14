@@ -12,7 +12,6 @@ var connection = mysql.createConnection({
 });
 
 connection.connect();
-
 app.set('views', path.join(__dirname, 'views'));//__dirname은 views라는 나의 폴더아래에 있다라고 알려주는 것
 app.set('view engine', 'ejs');
 
