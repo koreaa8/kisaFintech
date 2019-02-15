@@ -48,5 +48,8 @@ app.get('/user', function(req, res){
 				+ '<button>submit</button>');
 })
 
+app.get('/join', function(req, res){
+	res.render('join');
+})
 
 app.listen(3001)
