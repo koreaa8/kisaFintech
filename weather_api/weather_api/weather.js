@@ -13,6 +13,7 @@ function current(callback) {
         parser.parseString(body, function (err, jsonData) {
             console.log(body);
             console.log(jsonData);
+            console.log("branch test");
             callback(jsonData.rss.channel[0].item[0].description[0].header[0].wf[0]);
         })
     });
